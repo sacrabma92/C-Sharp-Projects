@@ -3977,11 +3977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROYECTOS\\C#\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+      "projectUniqueName": "D:\\PROYECTOS\\C#\\API-Peliculas-C-Swagger\\ApiPeliculas\\ApiPeliculas.csproj",
       "projectName": "ApiPeliculas",
-      "projectPath": "D:\\PROYECTOS\\C#\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+      "projectPath": "D:\\PROYECTOS\\C#\\API-Peliculas-C-Swagger\\ApiPeliculas\\ApiPeliculas.csproj",
       "packagesPath": "C:\\Users\\karlo\\.nuget\\packages\\",
-      "outputPath": "D:\\PROYECTOS\\C#\\ApiPeliculas\\ApiPeliculas\\obj\\",
+      "outputPath": "D:\\PROYECTOS\\C#\\API-Peliculas-C-Swagger\\ApiPeliculas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/698aT1NstmgvuQiV2Uj7g+XmUBLX71a/kOv/a2f3rLdy3E5rXi5CW6U6ldGqcNufmHXuKg+fzXXDI/8Fa07gQ==",
+  "dgSpecHash": "jKSr7+uPrKMUf421oTRK5k+CP0sHt1d5+t0upoZo87ztkMqOW/sSPkxJfRm9H3KMb4zBgy7gjac/dVkrisjxlQ==",
   "success": true,
-  "projectFilePath": "D:\\PROYECTOS\\C#\\ApiPeliculas\\ApiPeliculas\\ApiPeliculas.csproj",
+  "projectFilePath": "D:\\PROYECTOS\\C#\\API-Peliculas-C-Swagger\\ApiPeliculas\\ApiPeliculas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\karlo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
