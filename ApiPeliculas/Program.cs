@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
 {
     opciones.UseSqlServer(builder.Configuration.GetConnectionString("ConexionSql"));
 });
+
+// AÑadir cache
+builder.Services.AddResponseCaching();
 
 // Agregamos los repositorios
 builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
@@ -47,7 +51,11 @@ builder.Services.AddAuthentication(x =>
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(opcion =>
+{
+    // Cache profile. Un cache global
+    opcion.CacheProfiles.Add("PorDefecto20Segundos", new CacheProfile() { Duration = 20});
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen( options =>

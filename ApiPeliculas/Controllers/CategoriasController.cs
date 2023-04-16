@@ -24,6 +24,8 @@ namespace ApiPeliculas.Controllers
 
         [AllowAnonymous]
         [HttpGet]
+        //[ResponseCache(Duration = 20 )]
+        [ResponseCache(CacheProfileName = "PorDefecto20Segundos")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public IActionResult GetCategorias()
@@ -41,6 +43,8 @@ namespace ApiPeliculas.Controllers
 
         [AllowAnonymous]
         [HttpGet("{categoriaId:int}", Name = "GetCategoria")]
+        //[ResponseCache(Duration = 30)]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
