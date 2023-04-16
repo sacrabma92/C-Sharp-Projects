@@ -2,6 +2,7 @@
 using ApiPeliculas.Modelos.Dtos;
 using ApiPeliculas.Repositorio.IRepositorio;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace ApiPeliculas.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -35,6 +37,7 @@ namespace ApiPeliculas.Controllers
             return Ok(listaPelicultasDto);
         }
 
+        [AllowAnonymous]
         [HttpGet("{peliculaId:int}", Name = "GetPelicula")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -52,10 +55,12 @@ namespace ApiPeliculas.Controllers
             return Ok(itemPeliculaDto);
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
         [ProducesResponseType(201, Type = typeof(PeliculaDto))]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult CrearPelicula([FromBody] PeliculaDto peliculaDto)
@@ -84,8 +89,10 @@ namespace ApiPeliculas.Controllers
             return CreatedAtRoute("GetPelicula", new { peliculaId = pelicula.Id }, pelicula);
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPatch("{peliculaId:int}", Name = "ActualizarPathPelicula")]
         [ProducesResponseType(204)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult ActualizarPathPelicula(int peliculaId, [FromBody] PeliculaDto peliculaDto)
@@ -105,9 +112,11 @@ namespace ApiPeliculas.Controllers
             return NoContent();
         }
 
+        [Authorize(Roles = "admin")]
         [HttpDelete("{peliculaId:int}", Name = "BorrarPelicula")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult BorrarPelicula(int peliculaId)
@@ -127,6 +136,7 @@ namespace ApiPeliculas.Controllers
             return NoContent();
         }
 
+        [AllowAnonymous]
         [HttpGet("GetPeliculasEnCategoria/{categoriaId:int}")]
         public IActionResult GetPeliculasEnCategoria(int categoriaId)
         {
@@ -146,10 +156,10 @@ namespace ApiPeliculas.Controllers
             return Ok(itemPelicula);
         }
 
+        [AllowAnonymous]
         [HttpGet("Buscar")]
         public IActionResult Buscar(string nombre)
         {
-
             try
             {
                 var resultado = _pelRepo.BuscarPelicula(nombre.Trim());
