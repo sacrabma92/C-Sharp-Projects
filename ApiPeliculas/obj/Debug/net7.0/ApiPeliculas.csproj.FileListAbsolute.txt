@@ -154,3 +154,5 @@ D:\PROYECTOS\C#\API-Peliculas-C-Swagger\ApiPeliculas\obj\Debug\net7.0\refint\Api
 D:\PROYECTOS\C#\API-Peliculas-C-Swagger\ApiPeliculas\obj\Debug\net7.0\ApiPeliculas.pdb
 D:\PROYECTOS\C#\API-Peliculas-C-Swagger\ApiPeliculas\obj\Debug\net7.0\ApiPeliculas.genruntimeconfig.cache
 D:\PROYECTOS\C#\API-Peliculas-C-Swagger\ApiPeliculas\obj\Debug\net7.0\ref\ApiPeliculas.dll
+D:\PROYECTOS\C#\API-Peliculas-C-Swagger\ApiPeliculas\bin\Debug\net7.0\Microsoft.Practices.ServiceLocation.dll
+D:\PROYECTOS\C#\API-Peliculas-C-Swagger\ApiPeliculas\bin\Debug\net7.0\XAct.Core.PCL.dll

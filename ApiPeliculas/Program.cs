@@ -16,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
 // Agregamos los repositorios
 builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
 builder.Services.AddScoped<IPeliculaRepositorio, PeliculaRepositorio>();
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
 // Agregar el AutoMapper
 builder.Services.AddAutoMapper(typeof(PeliculasMapper));
@@ -28,6 +29,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// Soporte para CORS
+// Se pueden habilitar: 1-Un dominio, 2-Multiple dominios,
+// 3-Cualquier dominio (Tener en cuenta seguridad)
+// Usamos de ejemplo el dominio: http://localhost:4200, se debe cambiar por el correcto
+// Se usa (*) para todos los dominios
+builder.Services.AddCors(p => p.AddPolicy("PolicyCors", build =>
+{
+    build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader().AllowAnyHeader();
+}));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
