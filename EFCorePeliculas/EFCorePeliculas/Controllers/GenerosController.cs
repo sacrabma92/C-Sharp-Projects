@@ -26,7 +26,7 @@ namespace EFCorePeliculas.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Genero>> Get(int id)
         {
-            // Trae eñ genero por id
+            // Trae el genero por id
             var genero = await context.Generos.SingleOrDefaultAsync(g => g.Identificador == id);
             if(genero == null)
             {
@@ -63,18 +63,34 @@ namespace EFCorePeliculas.Controllers
         {
             // Trae lista de generos que CONTENGAN el parametro buscando, puede ser una letra 
             return await context.Generos.Where(
-                g => g.Nombre.Contains(nombre)).ToListAsync();
+                g => g.Nombre
+                .Contains(nombre))
+                .ToListAsync();
         }
 
-        [HttpGet("filtrarNombreOrdenarPorNombre")]
-        public async Task<IEnumerable<Genero>> FiltrarOrdenarPorNombre(string nombre)
+        [HttpGet("OrdenarPorNombreAscendente")]
+        public async Task<IEnumerable<Genero>> FiltrarOrdenarPorNombreAsc(string nombre)
         {
             // Trae lista de generos que CONTENGAN el parametro buscando, puede ser una letra.
-            // Y ordena de forma Ascendente el Nombre   
-            return await context.Generos.Where(
-                g => g.Nombre.Contains(nombre))
+            // Y ordena de forma Ascendente el Nombre       
+            return await context.Generos
+                .Where(g => g.Nombre.Contains(nombre))
                 .OrderBy(g => g.Nombre)
                 .ToListAsync();
         }
+
+        [HttpGet("YOrdenarPorNombreDescemdemnte")]
+        public async Task<IEnumerable<Genero>> FiltrarOrdenarPorNombreDesc(string nombre)
+        {
+            // Trae lista de generos que CONTENGAN el parametro buscando, puede ser una letra.
+            // Y ordena de forma Descendente el Nombre       
+            return await context.Generos
+                .Where(g => g.Nombre.Contains(nombre))
+                .OrderByDescending(g => g.Nombre)
+                .ToListAsync();
+        }
+
+        [HttpGet("paginacion")]
+        public async Task<ActionResult>
     }
 }
