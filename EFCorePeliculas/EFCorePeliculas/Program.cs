@@ -12,7 +12,8 @@ builder.Services.AddSwaggerGen();
 // Cadena de Conexión
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
-            opciones.UseSqlServer(connectionString));
+            opciones.UseSqlServer(connectionString,
+            sqlServer => sqlServer.UseNetTopologySuite()));
 
 var app = builder.Build();
 
