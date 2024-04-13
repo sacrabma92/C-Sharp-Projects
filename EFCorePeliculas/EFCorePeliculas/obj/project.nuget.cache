@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VhgFD0YpkFrG67zpgJ+3vJf9KA2XRF0cMyowaCgMsAaZ8svDDEU01JvqeWVBhXR41g6Ibgz5Q3qm1WUqzBcshg==",
+  "dgSpecHash": "Lq3VCwg4A3xxDhnN21ZG1UWXxe5qV/PTFSklorc5VLD8nefBPQQcprX4Rt7evlwtRRl98z2lncMMugxf9mUMzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\empas\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\empas\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\empas\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\empas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -89,8 +89,5 @@ namespace EFCorePeliculas.Controllers
                 .OrderByDescending(g => g.Nombre)
                 .ToListAsync();
         }
-
-        [HttpGet("paginacion")]
-        public async Task<ActionResult>
     }
 }

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|c:\\users\\empas\\onedrive\\documentos\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|solutionrelative:efcorepeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|c:\\users\\empas\\onedrive\\documentos\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|solutionrelative:efcorepeliculas\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|c:\\users\\empas\\onedrive\\documentos\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\servicios\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|solutionrelative:efcorepeliculas\\servicios\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Program.cs",
-              "RelativeDocumentMoniker": "EFCorePeliculas\\Program.cs",
-              "ToolTip": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Program.cs",
-              "RelativeToolTip": "EFCorePeliculas\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "DocumentIndex": 1,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Servicios\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "EFCorePeliculas\\Servicios\\AutoMapperProfiles.cs",
+              "ToolTip": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Servicios\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "EFCorePeliculas\\Servicios\\AutoMapperProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T13:16:06.884Z",
+              "WhenOpened": "2024-04-13T16:20:40.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PeliculasController.cs",
+              "DocumentMoniker": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Controllers\\PeliculasController.cs",
+              "RelativeDocumentMoniker": "EFCorePeliculas\\Controllers\\PeliculasController.cs",
+              "ToolTip": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Controllers\\PeliculasController.cs",
+              "RelativeToolTip": "EFCorePeliculas\\Controllers\\PeliculasController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:04:24.404Z",
               "EditorCaption": ""
             }
           ]
