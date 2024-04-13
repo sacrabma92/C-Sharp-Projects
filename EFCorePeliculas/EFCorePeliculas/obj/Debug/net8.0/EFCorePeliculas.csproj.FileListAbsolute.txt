@@ -276,3 +276,7 @@ D:\PROGRAMAS\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\bin\Debug\net8.0\M
 D:\PROGRAMAS\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\bin\Debug\net8.0\NetTopologySuite.dll
 D:\PROGRAMAS\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\bin\Debug\net8.0\NetTopologySuite.IO.SqlServerBytes.dll
 D:\PROGRAMAS\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\obj\Debug\net8.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\empas\OneDrive\Documentos\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\empas\OneDrive\Documentos\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\bin\Debug\net8.0\NetTopologySuite.dll
+C:\Users\empas\OneDrive\Documentos\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\bin\Debug\net8.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\empas\OneDrive\Documentos\C-Sharp-Projects\EFCorePeliculas\EFCorePeliculas\obj\Debug\net8.0\EFCoreSqlServerNetTopologySuite.cs

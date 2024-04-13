@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\",
+  "WorkspaceRootPath": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Migrations\\20240413032644_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EFCorePeliculas\\Migrations\\20240413032644_Inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|c:\\users\\empas\\onedrive\\documentos\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|solutionrelative:efcorepeliculas\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|d:\\programas\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|c:\\users\\empas\\onedrive\\documentos\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|solutionrelative:efcorepeliculas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|c:\\users\\empas\\onedrive\\documentos\\c-sharp-projects\\efcorepeliculas\\efcorepeliculas\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2EF5FE3-2058-4588-8E2F-4490960164FB}|EFCorePeliculas\\EFCorePeliculas.csproj|solutionrelative:efcorepeliculas\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240413032644_Inicial.cs",
-              "DocumentMoniker": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Migrations\\20240413032644_Inicial.cs",
-              "RelativeDocumentMoniker": "EFCorePeliculas\\Migrations\\20240413032644_Inicial.cs",
-              "ToolTip": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Migrations\\20240413032644_Inicial.cs",
-              "RelativeToolTip": "EFCorePeliculas\\Migrations\\20240413032644_Inicial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Program.cs",
+              "RelativeDocumentMoniker": "EFCorePeliculas\\Program.cs",
+              "ToolTip": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Program.cs",
+              "RelativeToolTip": "EFCorePeliculas\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T03:26:44.603Z",
+              "WhenOpened": "2024-04-13T13:16:06.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "EFCorePeliculas\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\ApplicationDbContext.cs",
-              "RelativeToolTip": "EFCorePeliculas\\ApplicationDbContext.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAYwBgAAABaAAAA",
+              "DocumentIndex": 0,
+              "Title": "GenerosController.cs",
+              "DocumentMoniker": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Controllers\\GenerosController.cs",
+              "RelativeDocumentMoniker": "EFCorePeliculas\\Controllers\\GenerosController.cs",
+              "ToolTip": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\Controllers\\GenerosController.cs",
+              "RelativeToolTip": "EFCorePeliculas\\Controllers\\GenerosController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAqwEgAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T03:04:09.993Z",
+              "WhenOpened": "2024-04-13T13:17:01.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EFCorePeliculas\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EFCorePeliculas\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T13:13:44.68Z",
               "EditorCaption": ""
             }
           ]

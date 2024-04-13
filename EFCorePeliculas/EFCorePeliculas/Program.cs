@@ -11,9 +11,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Cadena de Conexión
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(opciones =>
-            opciones.UseSqlServer(connectionString,
-            sqlServer => sqlServer.UseNetTopologySuite()));
+builder.Services.AddDbContext<ApplicationDbContext>(opciones => {
+    opciones.UseSqlServer(connectionString, sqlServer => sqlServer.UseNetTopologySuite());
+    // Configuracion del NoTracking GLOBAL
+    opciones.UseQueryTrackingBehavior (QueryTrackingBehavior.NoTracking);
+    });
 
 var app = builder.Build();
 
