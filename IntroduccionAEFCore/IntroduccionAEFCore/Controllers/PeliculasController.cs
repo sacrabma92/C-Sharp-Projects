@@ -20,6 +20,48 @@ namespace IntroduccionAEFCore.Controllers
             this.mapper = mapper;
         }
 
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Pelicula>> Get(int id)
+        {
+            var pelicula = await context.Peliculas
+                .Include(p => p.Comentarios)
+                .Include(p => p.Generos)
+                .Include(p => p.PeliculasActores.OrderBy(c => c.Orden))
+                    .ThenInclude(pa => pa.Actor)
+                .FirstOrDefaultAsync(p => p.Id == id);
+            if(pelicula is null) 
+            {
+                return NotFound();
+            }
+            return pelicula;
+        }
+
+        [HttpGet("select/{id:int}")]
+        public async Task<ActionResult> GetSelect(int id)
+        {
+            var pelicula = await context.Peliculas
+               .Select(pel => new
+               {
+                   pel.Id,
+                   pel.Titulo,
+                   Generos = pel.Generos.Select(g => g.Nombre).ToList(),
+                   Actore = pel.PeliculasActores.OrderBy(pa => pa.Orden).Select(pa => 
+                   new
+                   {
+                       Id = pa.ActorId,
+                       pa.Actor.Nombre,
+                       pa.Personaje
+                   }),
+                   CantidadComentarios = pel.Comentarios.Count()
+               })
+                .FirstOrDefaultAsync(p => p.Id == id);
+            if (pelicula is null)
+            {
+                return NotFound();
+            }
+            return Ok(pelicula);
+        }
+
         [HttpPost]
         public async Task<ActionResult> Post(PeliculaCreacionDTO peliculaCreacionDTO)
         {
@@ -41,6 +83,19 @@ namespace IntroduccionAEFCore.Controllers
             context.Add(pelicula);
             await context.SaveChangesAsync();
             return Ok();
+        }
+
+        [HttpDelete("{id:int}/moderna")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var filasAlteradas = await context.Peliculas
+                .Where(g => g.Id == id).ExecuteDeleteAsync();
+
+            if (filasAlteradas == 0)
+            {
+                return NotFound();
+            }
+            return NoContent();
         }
     }
 }

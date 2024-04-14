@@ -15,6 +15,8 @@ namespace IntroduccionAEFCore.Entidades.Configuraciones
             // Tabla Genero
             builder.Property(e => e.Nombre)
                 .HasMaxLength(150);
+
+            builder.HasIndex(e => e.Nombre).IsUnique();
         }
     }
 }

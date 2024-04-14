@@ -10,6 +10,7 @@ namespace IntroduccionAEFCore.Utilidades
         {
             CreateMap<GeneroCreacionDTO, Genero>();
             CreateMap<ActorCreacionDTO, Actor>();
+            CreateMap<Actor, ActorDTO>();
             CreateMap<ComentarioCreacionDTO, Comentario>();
             CreateMap<PeliculaCreacionDTO, Pelicula>()
                 .ForMember(ent => ent.Generos, dto => 
