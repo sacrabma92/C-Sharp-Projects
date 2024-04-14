@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj": {}
+    "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj": {
+    "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
+        "projectUniqueName": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
         "projectName": "EFCorePeliculas",
-        "projectPath": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
-        "packagesPath": "C:\\Users\\empas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\empas\\OneDrive\\Documentos\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\obj\\",
+        "projectPath": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\EFCorePeliculas.csproj",
+        "packagesPath": "C:\\Users\\karlo\\.nuget\\packages\\",
+        "outputPath": "D:\\PROGRAMAS\\C-Sharp-Projects\\EFCorePeliculas\\EFCorePeliculas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\empas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\karlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
