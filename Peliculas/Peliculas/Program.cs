@@ -13,7 +13,8 @@ builder.Services.AddSwaggerGen();
 // Cadena Conexion a BD
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
-        options.UseSqlServer(connectionString));
+        options.UseSqlServer(connectionString,
+        sqlServer => sqlServer.UseNetTopologySuite()));
 
 var app = builder.Build();
 
