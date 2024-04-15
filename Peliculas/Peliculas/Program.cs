@@ -12,9 +12,12 @@ builder.Services.AddSwaggerGen();
 
 // Cadena Conexion a BD
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options => 
-        options.UseSqlServer(connectionString,
-        sqlServer => sqlServer.UseNetTopologySuite()));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(connectionString, sqlServer => sqlServer.UseNetTopologySuite());
+    // Configuración del AsNoTracking
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+});
 
 var app = builder.Build();
 
