@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EFCorePeliculas.Entidades.Seeding;
+using Microsoft.EntityFrameworkCore;
 using Peliculas.Entities;
 using System.Reflection;
 
@@ -20,7 +21,7 @@ namespace Peliculas
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
+            SeedingModuloConsulta.Seed(modelBuilder);
         }
         public DbSet<Genero> Generos { get; set; }
         public DbSet<Actor> Actores { get; set; }
