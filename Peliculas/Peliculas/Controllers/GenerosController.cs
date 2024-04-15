@@ -21,5 +21,11 @@ namespace Peliculas.Controllers
         {
             return await context.Generos.ToListAsync();
         }
+
+        [HttpGet("primer")]
+        public async Task<Genero> PrimerRegistro()
+        {
+            return await context.Generos.FirstAsync();
+        }
     }
 }
