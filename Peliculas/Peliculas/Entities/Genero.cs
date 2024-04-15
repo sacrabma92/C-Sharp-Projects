@@ -16,5 +16,6 @@ namespace Peliculas.Entities
         // Configuracion del nombre de la columna en la BD
         //[Column("NombreGenero")]
         public string Nombre { get; set; }
+        public HashSet<Pelicula> Peliculas { get; set; }
     }
 }
