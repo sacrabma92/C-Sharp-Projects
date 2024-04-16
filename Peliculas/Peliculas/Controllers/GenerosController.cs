@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Peliculas.Entities;
 
@@ -22,10 +21,39 @@ namespace Peliculas.Controllers
             return await context.Generos.ToListAsync();
         }
 
-        [HttpGet("primer")]
-        public async Task<Genero> PrimerRegistro()
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Genero>> Get(int id)
         {
-            return await context.Generos.FirstAsync();
+            var genero = await context.Generos
+                .FirstOrDefaultAsync(g => g.Identificador == id);
+
+            if(genero is null)
+            {
+                return NotFound();
+            }
+            return genero;
+        }
+
+        [HttpGet("primerNombreConC")]
+        public async Task<ActionResult<Genero>> PrimerRegistro()
+        {
+            var genero = await context.Generos
+                .FirstOrDefaultAsync(g => g.Nombre.StartsWith("C"));
+
+            if(genero is null)
+            {
+                return NotFound();
+            }
+            return genero;
+        }
+
+        [HttpGet("filtrar")]
+        public async Task<IEnumerable<Genero>> Filtrar(string nombre)
+        {
+            return await context.Generos
+                .Where(g => g.Nombre.Contains(nombre))
+                .OrderBy(g => g.Nombre)
+                .ToListAsync();
         }
     }
 }
