@@ -48,5 +48,49 @@ namespace Peliculas.Controllers
                 }).ToListAsync();
             return Ok(cines);
         }
+
+        [HttpPost]
+        public async Task<ActionResult> Post()
+        {
+            var geometryFactory = NtsGeometryServices.Instance.CreateGeometryFactory(srid: 4326);
+            var ubicacionCine = geometryFactory.CreatePoint(new Coordinate(-69.896979, 18.476276));
+
+            var cines = new Cine
+            {
+                Nombre = "Mi Cine",
+                Ubicacion = ubicacionCine,
+                CineOferta = new CineOferta()
+                {
+                    PorcentajeDescuento = 5,
+                    FechaInicio = DateTime.Today,
+                    FechaFin = DateTime.Today.AddDays(7)
+                },
+                SalasDeCines = new HashSet<SalaDeCine>()
+                {
+                    new SalaDeCine()
+                    {
+                        Precio = 200,
+                        TipoSalaDeCine = TipoSalaDeCine.DosDimensiones
+                    },
+                    new SalaDeCine()
+                    {
+                        Precio = 350,
+                        TipoSalaDeCine = TipoSalaDeCine.TresDimensiones
+                    }
+                }
+            };
+            context.Add(cines);
+            await context.SaveChangesAsync();
+            return Ok();
+        }
+
+        [HttpPost("ConDTO")]
+        public async Task<ActionResult> Post(CineCreacionDTO cineCreacionDTO)
+        {
+            var cine = mapper.Map<Cine>(cineCreacionDTO);
+            context.Add(cine);
+            await context.SaveChangesAsync();
+            return Ok();
+        }
     }
 }
