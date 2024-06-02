@@ -1,4 +1,5 @@
 using CleanArchitecture.Domain.Abstractions;
+using CleanArchitecture.Domain.Users.Events;
 
 namespace CleanArchitecture.Domain.Users;
 
@@ -29,6 +30,7 @@ public sealed class User : Entity
   )
   {
     var user = new User(Guid.NewGuid(), nombre, apellido, email);
+    user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id));
     return user;
   }
 }
